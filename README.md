@@ -1,4 +1,4 @@
-![My Image](Password Generator.png)
+
 
 Certainly! Here's a README tailored to your project:
 
@@ -24,4 +24,6 @@ This project aims to provide users with a convenient tool for generating secure 
 2. Adjust the password length and character type settings according to your preferences.
 3. Click the "Generate" button to create a random password based on your chosen criteria.
 4. To copy the generated password to the clipboard, click the "Copy" button.
+    ![Password Generator](https://github.com/sushu-99/Password-Generator-/assets/132267021/cb6b34d1-e19f-4d20-8b1f-47c3f2b3f58b)
+
 
