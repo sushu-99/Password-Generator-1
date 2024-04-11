@@ -1,5 +1,5 @@
 
-❮img src="images/you-picture.png" ❯
+❮img src="Password Generator.png" ❯
 Certainly! Here's a README tailored to your project:
 
 ---
