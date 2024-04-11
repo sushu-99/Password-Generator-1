@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+:root {
+  --bg-color: #7e5baf; /* Purple background color */
+  --text-color-light: hsl(var(--hue-light), 70%, 50%);
+  --text-color-dark: hsl(var(--hue-dark), 70%, 50%);
+  --toggle-bg-light: hsl(var(--hue-light), 70%, 50%);
+  --toggle-bg-dark: hsl(var(--hue-dark), 70%, 50%);
+  --toggle-slider-light: hsl(var(--hue-light), 70%, 50%);
+  --toggle-slider-dark: hsl(var(--hue-dark), 70%, 50%);
+  --filter-light: drop-shadow(-8px -8px 12px #ffffff) drop-shadow(8px 8px 12px #c3c5c8);
+  --filter-dark: drop-shadow(-8px -8px 12px #16151508) drop-shadow(8px 8px 12px #13111178);
+}
+[data-theme="light"] {
+  --bg-color: #eef0f4;
+  --color: #999;
+  --togglebg: #333;
+  --roundcolor: #eef0f4;
+  --toggleslider: #111;
+  --togglesliderColor: #111;
+  --filter1: drop-shadow(-8px -8px 12px #ffffff)
+    drop-shadow(8px 8px 12px #c3c5c8);
+  --filter2: drop-shadow(-4px -4px 6px #ffffff) drop-shadow(4px 4px 6px #c3c5c8);
+  --filter3: drop-shadow(-2px -2px 3px #ffffff) drop-shadow(2px 2px 3px #c3c5c8);
+}
+
+[data-theme="dark"] {
+  --bg-color: #333;
+  --color: #ccc;
+  --roundcolor: #333;
+  --toggleslider: #eef0f4;
+  --togglesliderColor: #fff;
+  --filter1: drop-shadow(-8px -8px 12px #16151508)
+    drop-shadow(8px 8px 12px #13111178);
+  --filter2: drop-shadow(-4px -4px 6px #16151508)
+    drop-shadow(4px 4px 6px #13111178);
+  --filter3: drop-shadow(-2px -2px 3px #16151508)
+    drop-shadow(2px 2px 3px #13111178);
+}
+
+To change the font to italic, you can update the `font-family` property in the CSS. Here's the modified CSS with the font set to italic:
+
+```css
+/* Reset and Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: "Muli", sans-serif;
+  font-style: italic; /* Set font style to italic */
+}
+
+/* Typography */
+p {
+  margin: 5px 0;
+}
+
+h2 {
+  margin: 10px 0 20px;
+  text-align: center;
+  font-style: italic; /* Set font style to italic */
+}
+
+/* Form Elements */
+input[type="checkbox"] {
+  margin-right: 0;
+}
+
+/* Layout and Structure */
+.container {
+  padding: 20px;
+  width: 350px;
+  max-width: 100%;
+  background: var(--bg-color);
+  border: 12px solid var(--bg-color);
+  filter: var(--filter);
+  margin: auto;
+}
+
+.result-container {
+  background-color: var(--bg-color);
+  border: 12px solid var(--bg-color);
+  filter: var(--filter);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  letter-spacing: 1px;
+  height: 60px;
+  width: 100%;
+  margin-bottom: 35px;
+}
+
+textarea {
+  background: none;
+  border: none;
+  color: var(--text-color);
+  font-size: 20px;
+  margin-top: auto;
+  outline: none;
+  resize: none;
+}
+
+.result-container .btn {
+  font-size: 20px;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  height: 40px;
+  width: 40px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+}
+
+.btn {
+  width: 50%;
+  border: none;
+  color: var(--text-color);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 8px 12px;
+  margin: 14px 5px 7px 5px;
+  background-color: var(--bg-color);
+  filter: var(--filter);
+}
+
+.btn:hover {
+  filter: var(--filter);
+  transition: 0.3s ease-in-out;
+}
+
+/* Settings */
+.setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 400px) {
+  .result-container {
+    font-size: 14px;
+  }
+}
+```
+
+Now, the font style for the body and `h2` elements will be italic. Adjust as necessary for other elements.
